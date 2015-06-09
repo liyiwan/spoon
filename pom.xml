@@ -14,22 +14,41 @@
   <version>1.1.10-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+<!--   <name>Spoon (Parent)</name> -->
+<!--   <description>Distributing instrumentation tests to all your Androids</description> -->
+<!--   <url>http://github.com/square/spoon</url> -->
+<!--   <inceptionYear>2012</inceptionYear> -->
+
+<!--   <scm> -->
+<!--     <url>http://github.com/square/spoon/</url> -->
+<!--     <connection>scm:git:git://github.com/square/spoon.git</connection> -->
+<!--     <developerConnection>scm:git:ssh://git@github.com/square/spoon.git</developerConnection> -->
+<!--     <tag>HEAD</tag> -->
+<!--   </scm> -->
+
+<!--   <issueManagement> -->
+<!--     <system>GitHub Issues</system> -->
+<!--     <url>http://github.com/square/spoon/issues</url> -->
+<!--   </issueManagement> -->
+
+
+<groupId>com.squareup.spoon</groupId>
+  <artifactId>parent</artifactId>
+  <version>1.1.10-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
   <name>Spoon (Parent)</name>
   <description>Distributing instrumentation tests to all your Androids</description>
-  <url>http://github.com/square/spoon</url>
+  <url>https://gitshell.com/huangcx/spoon</url>
   <inceptionYear>2012</inceptionYear>
 
   <scm>
-    <url>http://github.com/square/spoon/</url>
-    <connection>scm:git:git://github.com/square/spoon.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/square/spoon.git</developerConnection>
+    <url>https://gitshell.com/huangcx/spoon</url>
+    <connection>scm:git:git://gitshell.com/huangcx/spoon.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/huangcx/spoon.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
-  <issueManagement>
-    <system>GitHub Issues</system>
-    <url>http://github.com/square/spoon/issues</url>
-  </issueManagement>
 
   <licenses>
     <license>
@@ -236,5 +255,24 @@
         </configuration>
       </plugin>
     </plugins>
+    
+    
+     <reporting>
+        <plugins>
+             <plugin>
+               <groupId>org.codehaus.mojo</groupId>
+               <artifactId>checkstyle-maven-plugin</artifactId>
+               <version>6.7</version>
+               <configuration>
+                  <checkstylebugsXmlOutput>true</checkstylebugsXmlOutput>
+                  <checkstylebugsXmlWithMessages>true</checkstylebugsXmlWithMessages>
+                  <xmlOutput>true</xmlOutput>
+               </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+    
+    
+    
   </build>
 </project>

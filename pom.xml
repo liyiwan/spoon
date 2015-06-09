@@ -234,20 +234,7 @@
     </plugins>
     
     
-     <reporting>
-        <plugins>
-             <plugin>
-               <groupId>org.codehaus.mojo</groupId>
-               <artifactId>checkstyle-maven-plugin</artifactId>
-               <version>6.7</version>
-               <configuration>
-                  <checkstylebugsXmlOutput>true</checkstylebugsXmlOutput>
-                  <checkstylebugsXmlWithMessages>true</checkstylebugsXmlWithMessages>
-                  <xmlOutput>true</xmlOutput>
-               </configuration>
-            </plugin>
-        </plugins>
-    </reporting>
+     
     
     
     
